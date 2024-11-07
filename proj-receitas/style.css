@@ -8,6 +8,7 @@
 
 body {
     background-color: rgb(252, 245, 238);
+    overflow: hidden;
     
 }
 
@@ -83,6 +84,7 @@ main {
     width: 700px;
     margin-left: 100px;
     margin-bottom: 50px;
+    
 }
 
 .t1 {
@@ -187,7 +189,7 @@ footer {
     }
     
     aside {
-        margin: auto;
+        margin: 0 auto;
         margin-bottom: 30px;
     }
 

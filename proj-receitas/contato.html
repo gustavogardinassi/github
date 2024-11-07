@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces da Lulu - Quem somos</title>
+    <link rel="stylesheet" href="style-contato.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <header>
+        <div class="logo">
+           Doces da Lulu
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Catálogo</a></li>
+                <li><a href="quem-somos.html" target="_self">Quem somos</a></li>
+                <li><a href="contato.html" target="_self">Contato</a></li>
+                <li><a href="#" id="carrinho">Carrinho</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <div id="conteudo">
+            <div id="esquerda">
+               <div id="imagem">
+                    <img src="imagens/brownie-leite.jpg" alt="brownie">
+                </div>
+            </div>
+            <div id="direita">
+                <div id="formulario">
+                    <form action="">
+                        <fieldset>
+                            <legend><strong>Identificação</strong></legend>
+                            <p>
+                                <label for="nome">Nome:</label> <br> <input type="text" name="usuario" id="nome">
+                            </p>
+                            <br>
+                            <p>
+                                <label for="sobrenome">Sobrenome:</label> <br> <input type="text" name="usu" id="sobrenome">
+                            </p>
+                            <br>
+                            <p>
+                                <label for="email">E-mail:</label> <br> <input type="text" name="email" id="email">
+                            </p>
+                        </fieldset>
+                            <br>
+                        <fieldset>
+                            <legend><strong>Deixe sua mensagem!</strong></legend>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <br>
+                            <input type="button" value="Enviar" id="botao" onclick="enviar()">
+                        </fieldset>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    
+    <footer>
+        Todos os direitos reservados &copy;
+    </footer>
+</body>
+</html>

@@ -1,0 +1,237 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* border: 1px solid red; */ 
+}
+
+body {
+    background-color: rgb(252, 245, 238);
+    
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 50px 50px 50px;
+    max-width: 100%;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: "Sofia", sans-serif;
+    margin-left: 50px;
+    max-width: 100%;
+}
+
+
+
+ul {
+    display: flex;
+    gap: 50px;
+    line-height: 3;
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(183, 183, 69);
+    padding: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: rgb(183, 183, 69);
+    color: white;
+    scale: 1.1;
+    transition: 0.7s;
+}
+
+a#carrinho {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.7s;
+}
+
+a#carrinho:hover {
+    background-color: red;
+    font-size: 1.1em;
+}
+
+/* FIM DO CABEÇALHO */
+
+/* PRINCIPAL */
+
+#master {
+    display: flex;
+    gap: 50px;
+}
+
+main {
+    width: 700px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.t1 {
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 20px 20px 20px 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgb(244, 244, 215), rgba(252, 245, 238, 0.776));
+    border-radius: 10px;
+    font-family: "Sofia", sans-serif;
+}
+
+#conteudo {
+    display: flex;
+    gap: 40px; 
+    flex-wrap: wrap;
+}
+
+.item1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(244, 244, 215);
+    border-radius: 15px;
+    flex: 1;
+    max-width: 100%;
+   
+}
+
+img {
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+
+img:hover {
+    scale: 1.1;
+    transition: 0.7s;
+}
+
+.escrita {
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+#bt {
+    margin-top: 2px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+h5 {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: grey;
+}
+
+h6 {
+    font-size: 0.9em;
+    padding: 2px 0px 2px 0px;
+}
+
+.preco {
+    font-size: 0.8em;
+    color: rgb(216, 4, 4);
+    font-weight: bold;
+}
+
+/* FIM DO PRINCIPAL */
+
+/* ASIDE */
+
+
+
+#conteudo-aside {
+    max-width: 500px;
+    min-width: 200px;
+    background-color: white;
+    height: 300px;
+    border-radius: 20px;
+    border: 5px solid rgb(161, 161, 18);
+    
+}
+
+#cont-aside-1 {
+    /* border: 1px solid red; */
+    width: 550px;
+    height: 300px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(183, 183, 69, 0.121);
+}
+
+@media screen and (max-width: 880px) {
+    #master {
+        flex-direction: column;
+    }
+    
+    aside {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    main {
+        width: 560px;
+    }
+}
+    
+
+@media screen and (max-width: 560px) {
+    aside {
+        width: 400px;
+    }
+
+    main {
+        width: 400px;
+    }
+
+    img {
+        width: 350px;
+    }
+} 
+
+@media  screen and (max-width: 950px) {
+   header {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    nav {
+        margin-left: 50px;
+        margin-top: 24px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    nav ul {
+        flex-direction: column;
+        width: 100%; 
+        max-width: 100%;   
+    }
+}
+    
+
